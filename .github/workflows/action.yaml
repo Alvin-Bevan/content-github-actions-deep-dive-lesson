@@ -26,7 +26,7 @@ jobs:
             cd function
             zip -r ../${{ github.sha }}.zip .
       - name: Archieving Artificats
-        uses: actions/upload-articats@v2
+        uses: actions/upload-articat@v2
         with:
           name: zipped-bundle
           path: ${{ github.sha }}.zip
